@@ -1,0 +1,193 @@
+*{margin: 0;
+padding: 0;}
+body{
+    font-family: "Roboto", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 90%;
+    margin: 100px auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #ccc;
+}nav .nav-left a:hover{
+background-color: #ccc;
+}
+nav .nav-left a{
+    color: black;
+    font-size: 18px;
+    padding: 10px;
+    transition: 0.7s;
+
+}nav .nav-right ul li a{
+    padding: 10px;
+    transition: 0.7s;
+}
+nav .nav-right ul li a:hover{
+background-color: #ccc;
+}
+nav .nav-left span {
+font-weight: bold;
+margin-right: 5px;
+}
+nav .nav-right ul li{
+    display: inline-block;
+    margin-left: 30px;
+}nav .nav-right ul li a{
+    color: black;
+    font-size: 18px;
+}nav .menu{
+    font-size: 25px;
+    display: none;
+}
+header{
+    background-image: url(images/architre.jpg);
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}header h2{
+    
+    color: white;
+    font-size: 40px;
+    
+}header h2 span{
+    background-color: black;
+    opacity: 0.5;
+    padding: 10px;
+}
+.projects h2{
+  margin-bottom: 50px;
+  font-weight: normal;
+}
+.houses{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}.house{
+    width: 24%;
+    position: relative;
+
+}
+.house img{
+   width: 100%;
+}.house p{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    top: 0%;
+}.About h2{
+   margin-bottom: 10px;
+   margin-top: 10px;
+   font-weight: normal;
+  
+}.About .main{
+    margin-top: 20px;
+    
+    font-size: 23px;
+}hr{
+    margin: 30px ;
+    opacity: 0.5;
+}
+    
+
+.persons{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 0;
+}.person {
+    width: 24%;
+}.person img{
+    width: 100%;
+}.persons .person h2{
+font-weight: normal;
+padding: 10px 0px;
+}
+ .persons .person  .g{
+    opacity: 0.5;
+    padding: 10px 0px;
+}button{
+    font-size: 20px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.7s;
+    margin: 10px 0px;
+    padding: 5px 20px;
+    border: none;
+}button:hover{
+    background-color: #ccc;
+}.contact input{
+width: 90%;
+padding: 10px;
+font-size: 18px;
+margin: 10px;
+}.contact .i{
+width: max-content;
+background-color: black;
+color: white;
+transition: all ;
+margin-right: 2px;
+font-size: 2opx;
+padding: 10px;
+}.i:hover{
+    background-color:#bbb;
+    color: black;
+}.contact h2{
+    font-weight: normal;
+}.map img{
+    width: 100%;
+}footer{
+    background-color: black;
+    color: white;
+text-align: center;
+padding: 30px 0px;
+}@media screen and (max-width : 480px){
+   nav{
+    padding : 20px;
+   } 
+nav .nav-right ul {
+    display: none;
+}nav .menu{
+    display: block;
+}.houses{
+    flex-direction: column;
+}.house{
+    width: 100%;
+}.persons{
+    flex-direction: column;
+}
+}.person{
+    width: 100%;
+}@media screen and (min-width :481px) and (max-width :768px){
+    nav{
+        padding : 20px;
+       } 
+    nav .nav-right ul {
+        display: none;
+    }nav .menu{
+        display: block;
+    }.houses{
+        flex-wrap: wrap;
+    }.house{
+        width: 46%;
+    }.persons{
+        flex-wrap: wrap;
+    }
+    .person{
+        width: 46%;
+
+    }
+}
